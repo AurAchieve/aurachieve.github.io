@@ -51,8 +51,8 @@
         </p>
         
         <div class="cta-buttons hero-buttons">
-            <button id="try-now-btn" class="button-primary"><i class='bx bxl-github' style="margin-right: 8px;"></i> Try now</button>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdA6v4FyNCA9lzf_E-mPBP-PtF9ioedzijNrLCMPM9F_WuFgA/viewform?usp=header" target="_blank"><button class="button-secondary">Pre-register</button></a>
+            <button id="try-now-btn" class="button-primary" type="button" aria-haspopup="dialog" aria-controls="beta-modal"><i class='bx bxl-github' style="margin-right: 8px;"></i> View release options</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdA6v4FyNCA9lzf_E-mPBP-PtF9ioedzijNrLCMPM9F_WuFgA/viewform?usp=header" target="_blank" rel="noreferrer" class="button-secondary">Pre-register</a>
         </div>
     </div>
 
@@ -63,6 +63,11 @@
                 <i class='bx bx-id-card'></i>
                 <h3>Aura Pages</h3>
                 <p>Create your own personalized page to showcase your stats and achievements to the world.</p>
+            </div>
+            <div class="feature-card">
+                <i class='bx bx-book-content'></i>
+                <h3>Memory Lanes</h3>
+                <p>Keep your journal, memories, and reflections organized in one private place.</p>
             </div>
             <div class="feature-card">
                 <i class='bx bx-block'></i>
@@ -85,10 +90,11 @@
     <section id="screenshots" class="screenshots-section">
         <h2>A preview of AurAchieve</h2>
         <div class="screenshots-container">
-            <img src="screenshots/image.png" alt="Screenshot 1" class="screenshot">
-            <img src="screenshots/s2.png" alt="Screenshot 2" class="screenshot">
-            <img src="screenshots/s3.png" alt="Screenshot 3" class="screenshot">
-            <img src="screenshots/s4.png" alt="Screenshot 4" class="screenshot">
+            <img src="screenshots/home.png" alt="Home screen screenshot" class="screenshot">
+            <img src="screenshots/timer.png" alt="Focus timer screenshot" class="screenshot">
+            <img src="screenshots/habits.png" alt="Habits screen screenshot" class="screenshot">
+            <img src="screenshots/aurapage.png" alt="Aura page screenshot" class="screenshot">
+            <img src="screenshots/shop.png" alt="Shop screenshot" class="screenshot">
         </div>
     </section>
 
@@ -105,13 +111,13 @@
     <section id="get-ready" class="get-ready-section">
         <h2>Get ready to achieve.</h2>
         <div class="cta-buttons hero-buttons">
-            <a href="https://discord.gg/XQ5U7p7bdz" target="_blank"><button class="button-primary">Join Discord</button></a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdA6v4FyNCA9lzf_E-mPBP-PtF9ioedzijNrLCMPM9F_WuFgA/viewform?usp=header"><button class="button-secondary">Pre-register</button></a>
+            <a href="https://discord.gg/XQ5U7p7bdz" target="_blank" rel="noreferrer" class="button-primary">Join Discord</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdA6v4FyNCA9lzf_E-mPBP-PtF9ioedzijNrLCMPM9F_WuFgA/viewform?usp=header" target="_blank" rel="noreferrer" class="button-secondary">Pre-register</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 AurAchieve. All rights reserved.</p>
+        <p>&copy; 2026 AurAchieve. All rights reserved.</p>
         <div class="social-links">
             <a href="https://instagram.com/aurachieve" target="_blank"><i class='bx bxl-instagram'></i></a>
             <a href="https://github.com/NiceSapien/AurAchieve" target="_blank"><i class='bx bxl-github'></i></a>
@@ -124,19 +130,19 @@
     </footer>
 
     <!-- Beta Modal -->
-    <div id="beta-modal" class="modal-overlay">
+    <div id="beta-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="beta-modal-title" aria-describedby="beta-modal-description">
         <div class="modal-content">
-            <button class="modal-close">&times;</button>
-            <h2>Under Development</h2>
-            <p>AurAchieve is currently in active development. Features may change and bugs may occur.</p>
-            <p>Join our Discord to stay up to date, or pre-register for the official release.</p>
+            <button class="modal-close" type="button" aria-label="Close dialog">&times;</button>
+            <p class="modal-eyebrow">Under development</p>
+            <h2 id="beta-modal-title">AurAchieve is live, but still changing.</h2>
+            <p id="beta-modal-description">The app is still in active development, so features may move around or break. If you want to try the current build anyway, the download is right here.</p>
             
             <div class="modal-actions">
-                <a href="https://discord.gg/XQ5U7p7bdz" target="_blank" class="button-primary modal-btn">Join Discord</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdA6v4FyNCA9lzf_E-mPBP-PtF9ioedzijNrLCMPM9F_WuFgA/viewform?usp=header" target="_blank" class="button-secondary modal-btn">Pre-register</a>
+                <a href="https://github.com/NiceSapien/AurAchieve/releases" target="_blank" rel="noreferrer" class="button-primary modal-btn modal-btn-primary">Download current version</a>
+                <a href="https://discord.gg/XQ5U7p7bdz" target="_blank" rel="noreferrer" class="button-secondary modal-btn">Join Discord</a>
             </div>
             
-            <a href="https://github.com/nicesapien/aurachieve/releases" target="_blank" class="download-link">Download current version anyway</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdA6v4FyNCA9lzf_E-mPBP-PtF9ioedzijNrLCMPM9F_WuFgA/viewform?usp=header" target="_blank" rel="noreferrer" class="modal-link">Pre-register for release</a>
         </div>
     </div>
 
